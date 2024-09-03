@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SWOT Analysis Results</title>
+</head>
+<body>
+    <h1>SWOT Analysis Results</h1>
+    <h2>Strengths</h2>
+    <ul>
+        {% for item in swot.Strengths %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Weaknesses</h2>
+    <ul>
+        {% for item in swot.Weaknesses %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Opportunities</h2>
+    <ul>
+        {% for item in swot.Opportunities %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Threats</h2>
+    <ul>
+        {% for item in swot.Threats %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Perform Another Analysis</a>
+</body>
+</html>
